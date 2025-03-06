@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="w-10/12 mx-auto">
+    <header>
+        <nav class="flex justify-between bg-base-100 shadow-md mt-6 p-4 rounded-xl">
+            <!-- nav bar left part -->
+            <div class="flex items-center">
+                <img class="mr-2 w-10" src="assets/logo.png" alt="">
+                <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+
+            <!-- nav bar right part -->
+            <div class="flex justify-center items-center">
+                <button id="backToDeskBtn" class="bg-indigo-500 text-white font-bold rounded-lg p-2">Back to
+                    Desk</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="font-bold text-xl text-center my-4">Blogs</h2>
+
+        <section class="">
+            <!-- question 01 -->
+            <div class="py-5 bg-base-100 shadow-sm rounded-sm mb-6">
+                <h3 class="font-bold px-6">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <div
+                    style="margin-top: 10px; margin-bottom: 20px; border-bottom: 1px dashed rgb(205, 204, 204); width: 100%;">
+                </div>
+                <p class="px-6">We can select DOM elements using getElementById("id") for ID,
+                    getElementsByClassName("class") for class,
+                    getElementsByTagName("tag") for tag, querySelector("selector") for the first match,
+                    querySelectorAll("selector") for all
+                    matches, and getElementsByName("name") for elements by name attribute.</p>
+            </div>
+
+            <!-- question 02 -->
+            <div class="py-5 bg-base-100 shadow-sm rounded-sm mb-6">
+                <h3 class="font-bold px-6">Question-2: What is the difference between innerHTML, innerText, and
+                    textContent ?
+                </h3>
+                <div
+                    style="margin-top: 10px; margin-bottom: 20px; border-bottom: 1px dashed rgb(205, 204, 204); width: 100%;">
+                </div>
+                <p class="px-6">`innerHTML` sets or gets HTML content with tags, `innerText` handles only visible text,
+                    and `textContent` retrieves all
+                    text, including hidden content, as plain text.</p>
+            </div>
+
+            <!-- question 03 -->
+            <div class="py-5 bg-base-100 shadow-sm rounded-sm mb-6">
+                <h3 class="font-bold px-6">Question-3: What is event delegation in the DOM?
+                </h3>
+                <div
+                    style="margin-top: 10px; margin-bottom: 20px; border-bottom: 1px dashed rgb(205, 204, 204); width: 100%;">
+                </div>
+                <p class="px-6">Event delegation is a technique where a parent element handles events for its child
+                    elements using event bubbling,
+                    improving performance and handling dynamic elements efficiently.</p>
+            </div>
+
+            <!-- question 04 -->
+            <div class="py-5 bg-base-100 shadow-sm rounded-sm mb-6">
+                <h3 class="font-bold px-6">Question-4: What is event bubbling in the DOM?</h3>
+                <div
+                    style="margin-top: 10px; margin-bottom: 20px; border-bottom: 1px dashed rgb(205, 204, 204); width: 100%;">
+                </div>
+                <p class="px-6">Event bubbling is a process in the DOM where an event triggered on an element propagates
+                    upwards through its ancestors
+                    (parent, grandparent, etc.) in the DOM hierarchy. This allows parent elements to listen for events
+                    on their child
+                    elements.</p>
+            </div>
+
+            <!-- question 05 -->
+            <div class="py-5 bg-base-100 shadow-sm rounded-sm mb-4">
+                <h3 class="font-bold px-6">Question-5: How do you create, add, and remove elements using JavaScript?
+                </h3>
+                <div
+                    style="margin-top: 10px; margin-bottom: 20px; border-bottom: 1px dashed rgb(205, 204, 204); width: 100%;">
+                </div>
+                <p class="px-6">To create an element: `let newElement = document.createElement("div");`
+                    To add an element: `document.body.appendChild(newElement);`
+                    To remove an element: `newElement.remove();` or `parent.removeChild(child);`</p>
+            </div>
+        </section>
+    </main>
+    <script src="script/backBtn.js"></script>
+</body>
+</html>
